@@ -18,9 +18,11 @@ public class TurnSignalSensor {
 			System.out.println("Channel 1: " + c1);
 			if (c1==7324) {
 				blink.blinkLeft();
+				System.out.println("Signaling left turn.");
 			}
 			else if(c0==9765) {
 				blink.blinkRight();
+				System.out.println("Signaling right turn.");
 			}
 			Thread.sleep(500);
 			blink.off();
