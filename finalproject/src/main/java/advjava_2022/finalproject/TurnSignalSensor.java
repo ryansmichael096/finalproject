@@ -11,7 +11,7 @@ public class TurnSignalSensor {
 		TurnSignalBlinker blink = new TurnSignalBlinker();
 	
 		//Call TurnSignalBlinker class if motors indicate a right or left turn.
-		while(true ) {
+		while(true) {
 			int c0 = sensor.getDutyUs(0);
 			int c1 = sensor.getDutyUs(1);
 			System.out.println("Channel 0: " + c0);
@@ -23,6 +23,7 @@ public class TurnSignalSensor {
 				blink.blinkRight();
 			}
 			Thread.sleep(500);
+			blink.off();
 		}
 	}
 }
