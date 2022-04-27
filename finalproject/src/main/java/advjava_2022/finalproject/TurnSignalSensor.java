@@ -63,7 +63,7 @@ public class TurnSignalSensor {
 				else if ((c0==0)&&(c1<c4)&&(c2<c6)&&(c3==0)&&(c5==0)&&(c7==0)) {
 					direction = "left";
 				}
-				else if ((c0<7000)&&(c0<c4)&&(c3<7000)&&(c3<c6)&&(c4>10000)&&(c5==0)&&(c7==0)) {
+				else if ((c0<7000)&&(c0<c4)&&(c1==0)&&(c2==0)&&(c3<7000)&&(c3<c6)&&(c5==0)&&(c7==0)) {
 					direction = "left";
 				}
 				else {
